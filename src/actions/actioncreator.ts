@@ -1,4 +1,4 @@
-import { ArchiveItem, Archive } from '../pages/types/portfolioTypes/portfolioTypes';
+import { ArchiveItem, Archive } from '../pages/types/portfolioTypes';
 import { Actions } from '../lib/reducer'
 
 // サーバからデータを取得する関数

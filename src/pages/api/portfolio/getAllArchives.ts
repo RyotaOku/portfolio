@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { ArchiveItem, Archive } from '@/pages/oku/types/portfolioTypes/portfolioTypes'
+import { ArchiveItem, Archive } from '@/pages/types/portfolioTypes'
 const { Pool } = require('pg')
 
 type Input = {

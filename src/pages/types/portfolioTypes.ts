@@ -22,3 +22,12 @@ export type Global = {
     archives: Archive;
     isLoading: boolean;
 };
+
+export type ArchiveProps = {
+    archives: Archive;
+    filter: {
+        archive: 'all' | 'recommend';
+        condition: 'all' | 'code' | 'design' | 'presentation' | 'document';
+    };
+    onArchiveClick: (v: any) => void
+}
