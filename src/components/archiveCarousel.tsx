@@ -1,5 +1,5 @@
 import style from '@/styles/components/archiveCarousel.module.css'
-import { ArchiveProps } from "@/pages/types/portfolioTypes";
+import { ArchiveProps } from "@/types/portfolioTypes";
 
 export function ArchiveCarousel({ archives, filter, onArchiveClick }: ArchiveProps) {
     if (!archives) {

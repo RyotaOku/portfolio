@@ -1,4 +1,4 @@
-import { ArchiveItem, Archive, Global } from '../pages/types/portfolioTypes'
+import { ArchiveItem, Archive, Global } from '../types/portfolioTypes'
 
 export type Actions =
     | { type: 'GET_ARCHIVES_REQUEST' }

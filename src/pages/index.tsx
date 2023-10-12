@@ -2,7 +2,7 @@ import style from '@/styles/index.module.css'
 import styles from '@/styles/modal.module.css'
 import { useState, useEffect, useReducer } from 'react'
 import { Dialog } from 'primereact/dialog';
-import { Archive, ArchiveItem, Global } from './types/portfolioTypes';
+import { Archive, ArchiveItem, Global } from '../types/portfolioTypes';
 import { portfolioReducer } from '../lib/reducer';
 import { getAllArchives } from '../actions/actioncreator'
 import { ArchiveCarousel } from '@/components/archiveCarousel'
