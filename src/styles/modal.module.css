@@ -1,0 +1,73 @@
+.modal {
+    box-shadow: none !important;
+    width: 85%;
+    height: 85vh;
+    min-width: 1133px;
+}
+
+.modal .modalHeader {
+    padding: 0.5rem 0.8rem 0.5rem 1.5rem !important;
+    background: #7a7a7a !important;
+    color: #fff !important;
+}
+
+.archiveInner {
+    padding: 2rem 1.5rem 1rem;
+    color: #262626;
+}
+
+.summaryWrap {
+    display: flex;
+}
+
+.archiveInner .imgWrap {
+    display: block;
+    width: 55%;
+    height: auto;
+    overflow: hidden;
+}
+
+.archiveInner .imgWrap img {
+    width: 100%;
+    height: auto;
+}
+
+.archiveInner .contentText {
+    width: 45%;
+    padding-left: 2rem;
+}
+
+.archiveInner .contentText .title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    white-space: nowrap;
+    line-height: 1;
+    margin-top: 0.2rem;
+}
+
+.archiveInner .contentText .summary {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.archiveInner .contentText .explanation {
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-top: 0.5rem;
+    height: 4.9rem;
+}
+
+.archiveInner .contentText .archiveList {
+    margin-top: 2rem;
+}
+
+.archiveInner .contentText .archiveList li {
+    font-size: 0.9rem;
+    display: flex;
+    margin-bottom: 0.2rem;
+}
+
+.archiveInner .contentText .archiveList li .label {
+    font-weight: bold;
+    width: 6rem;
+}
