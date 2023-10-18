@@ -70,59 +70,6 @@ const radioOptions: RadioButton[] = [
 //     );
 // }
 
-type props = {
-    archive: ArchiveItem,
-    onClose: () => void,
-    visible: boolean
-}
-
-function ArchiveModal({ archive, onClose, visible }: props) {
-    return (
-        <Dialog
-            header={archive.title}
-            headerClassName={styles.modalHeader}
-            visible={visible}
-            className={styles.modal + ' ' + 'archiveModal'}
-            onHide={onClose}
-        >
-            <div className={styles.archiveInner}>
-                <div className={styles.summaryWrap}>
-                    <picture className={styles.imgWrap}>
-                        <img src={archive.image} alt="" />
-                    </picture>
-                    <div className={styles.contentText}>
-                        <p className={styles.title}>{archive.title}</p>
-                        <p className={styles.summary}>{archive.summary}</p>
-                        <p className={styles.explanation}>{archive.explanation}</p>
-                        <ul className={styles.archiveList}>
-                            <li>
-                                <p className={styles.label}>制作期間</p>
-                                <p className={styles.text}>{archive.productionPeriod}</p>
-                            </li>
-                            <li>
-                                <p className={styles.label}>担当分野</p>
-                                <p className={styles.text}>{archive.fieldOfCharge}</p>
-                            </li>
-                            <li>
-                                <p className={styles.label}>目的</p>
-                                <p className={styles.text}>{archive.purpose}</p>
-                            </li>
-                            <li>
-                                <p className={styles.label}>使用技術</p>
-                                <p className={styles.text}>{archive.tech.join(', ')}</p>
-                            </li>
-                            <li>
-                                <p className={styles.label}>使用ソフト</p>
-                                <p className={styles.text}>{archive.app.join(', ')}</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </Dialog>
-    )
-}
-
 export default function Portfolio() {
     // const [state, setState] = useState<Archive>([])
 

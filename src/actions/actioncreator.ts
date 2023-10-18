@@ -31,5 +31,7 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
         const err = error as Error;
         // 失敗のアクションを発行
         dispatch({ type: 'GET_ARCHIVES_FAILURE' });
+    } finally {
+
     }
 };
