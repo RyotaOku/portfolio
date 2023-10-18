@@ -10,6 +10,10 @@ body {
   padding: 0;
 }
 
+.p-dialog.archiveModal .p-dialog-header .p-dialog-header-icon:focus {
+  box-shadow: none;
+}
+
 .p-dialog.archiveModal .p-dialog-header .p-dialog-header-icon:enabled:hover {
   background: #676767 !important;
 }

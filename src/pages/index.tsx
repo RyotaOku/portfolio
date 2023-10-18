@@ -5,6 +5,7 @@ import { portfolioReducer } from '../lib/reducer';
 import { getAllArchives } from '../actions/actioncreator'
 import { ArchiveCarousel } from '@/components/archiveCarousel'
 import { ArchiveModal } from '@/components/archiveModal'
+import { Profile } from '@/components/profile';
 
 type Filter = {
     archive: 'all' | 'recommend';
@@ -24,54 +25,7 @@ const radioOptions: RadioButton[] = [
     { id: 'document', label: '自主学習資料' }
 ];
 
-// function ArchiveCarousel({ archives, filter, onArchiveClick }: ArchiveProps) {
-//     if (!archives) {
-//         return null;
-//     }
-
-//     const filteredArchives = archives.filter(archive => {
-//         // "recommend" が選択されている場合は、recommend が true のものだけを表示
-//         if (filter.archive === 'recommend' && !archive.recommend) return false;
-
-//         // condition の "all" が選択されている場合はすべてのアイテムを表示
-//         if (filter.condition === 'all') return true;
-
-//         // それ以外の condition のフィルタリング
-//         return filter.condition.includes(archive.genre);
-//     });
-
-//     const years = Array.from(new Set(filteredArchives.map(archive => archive.year))).sort((a, b) => {
-//         if (a === 'past') return 1;
-//         if (b === 'past') return -1;
-//         return b.localeCompare(a);
-//     });
-
-//     return (
-//         <div className={style.contentsWrap}>
-//             {years.map(year => (
-//                 <div key={year} className={style.contentsInner}>
-//                     <h3 className={style.contentsYear}>
-//                         {year === 'past' ? 'それ以前' : `${year}年度`}
-//                     </h3>
-//                     <div className={style.carousel}>
-//                         <div className={style.carouselWrap}>
-//                             {filteredArchives.filter(archive => archive.year === year).map((v, idx) => (
-//                                 <div className={style.archiveContent} key={idx} onClick={() => onArchiveClick(v)} data-title={v.title}>
-//                                     <picture><img src={v.image} alt="" /></picture>
-//                                 </div>
-//                             ))}
-//                         </div>
-//                     </div>
-//                 </div>
-//             ))
-//             }
-//         </div>
-//     );
-// }
-
 export default function Portfolio() {
-    // const [state, setState] = useState<Archive>([])
-
     const initialState: Global = {
         message: "",
         archives: [],
@@ -124,37 +78,11 @@ export default function Portfolio() {
             ...prev,
             condition: condition
         }));
-        console.log(filter);
     }
 
     return (
         <div className={style.wrap} style={sideProfile ? undefined : { gridTemplateColumns: '1rem 1fr' }}>
-            <div className={style.aboutMe} style={sideProfile ? undefined : { color: '#7a7a7a' }}>
-                <picture className={style.imageWrap}><img src="/images/portfolio/giselle.png" alt="" className={style.image} /></picture>
-                <section>
-                    <h1 className={style.name}>奥 綾太</h1>
-                    <h2 className={style.profile}>
-                        ECCコンピュータ専門学校<br />
-                        マルチメディア研究学科<br />
-                        Webデザインコース (2025年卒)
-                    </h2>
-                </section>
-                <section className={style.profileWrap}>
-                    <h3 className={style.title}>About</h3>
-                    <p>aespaのGiselleのファン。毎日aespaの曲を聴きながら活動し、aespaの曲を聴きながら眠る。</p>
-                    <p>また、ソ連好きの共産趣味者でもあり、近代史を熱心に調べたりもしている。</p>
-                </section>
-                <section className={style.profileWrap + ' ' + style.contactWrap}>
-                    <h3 className={style.title}>Contact</h3>
-                    <p className={style.email}><i className='pi pi-envelope'></i>ryota1991o@gmail.com</p>
-                    <p className={style.tel}><i className='pi pi-phone'></i>070-8598-8341</p>
-                    <p className={style.twitter}><i className='pi pi-twitter'></i>@Ryota11_07</p>
-                    <p className={style.instagram}><i className='pi pi-instagram'></i>ryota11_07</p>
-                </section>
-                <div className={style.switch} onClick={() => {
-                    sideProfile ? setSideProfile(false) : setSideProfile(true)
-                }}></div>
-            </div>
+            <Profile sideProfile={sideProfile} setSideProfile={setSideProfile} />
             <div className={style.archive}>
                 <h2 className={style.archiveTitle}>奥綾太の作品一覧</h2>
                 <div className={style.change}>
