@@ -17,7 +17,8 @@ export type ArchiveItem = {
     ideaNote?: string,
     presentation?: string,
     document?: string,
-    otherDesign?: string
+    otherDesign?: string,
+    video?: string
 }
 
 export type Archive = ArchiveItem[];
