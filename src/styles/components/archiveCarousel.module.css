@@ -58,7 +58,7 @@
 }
 
 .contentsWrap .carousel .carouselWrap .archiveContent {
-    border: 1px solid #bebebe;
+    /* border: 1px solid #bebebe; */
     height: 20vh;
     min-height: 161px;
     aspect-ratio: 16/9;
@@ -76,6 +76,15 @@
     justify-content: center;
 }
 
+.contentsWrap .carousel .carouselWrap .archiveContent picture .background {
+    height: 100%;
+    width: 100%;
+    object-fit: none;
+    position: absolute;
+    filter: blur(30px);
+    opacity: 0.8;
+}
+
 .contentsWrap .carousel .carouselWrap .archiveContent picture img {
     /* width: 100%; */
     cursor: pointer;
@@ -83,6 +92,7 @@
     object-fit: cover;
     display: block;
     display: flex;
+    position: absolute;
 }
 
 .contentsWrap .carousel .carouselWrap .archiveContent::before {
@@ -94,6 +104,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1rem;
+    border: 2px solid #bebebe;
     font-weight: bold;
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: saturate(180%) blur(2px);
@@ -103,6 +114,7 @@
     left: 0;
     transition: .2s;
     cursor: pointer;
+    z-index: 1;
 }
 
 .contentsWrap .carousel .carouselWrap .archiveContent:hover::before {

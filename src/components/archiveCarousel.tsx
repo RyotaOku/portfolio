@@ -34,7 +34,9 @@ export function ArchiveCarousel({ archives, filter, onArchiveClick }: ArchivePro
                         <div className={style.carouselWrap}>
                             {filteredArchives.filter(archive => archive.year === year).map((v, idx) => (
                                 <div className={style.archiveContent} key={idx} onClick={() => onArchiveClick(v)} data-title={v.title}>
-                                    <picture><img src={v.image} alt="" /></picture>
+                                    <picture>
+                                        <img src={v.image} alt="" className={style.background} />
+                                        <img src={v.image} alt="" /></picture>
                                 </div>
                             ))}
                         </div>

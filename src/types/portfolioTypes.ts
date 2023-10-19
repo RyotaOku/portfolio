@@ -13,12 +13,13 @@ export type ArchiveItem = {
     explanation: string,  // 説明
     tech: string[],  // 使用技術
     app: string[],  // 使用ソフト
-    beta?: string,
-    ideaNote?: string,
-    presentation?: string,
-    document?: string,
-    otherDesign?: string,
-    video?: string
+    beta?: string,  // zone用、beta版のリンク
+    ideaNote?: string,  // zone用、アイデアノート
+    presentation?: string,  // プレゼン資料
+    document?: string,  // 企画書
+    otherDesign?: string,  // その他のデザイン
+    video?: string  // プレゼンの動画版
+    designComp?: string, // デザインカンプ
 }
 
 export type Archive = ArchiveItem[];
