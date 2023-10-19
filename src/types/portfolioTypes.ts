@@ -1,5 +1,4 @@
 export type ArchiveItem = {
-    id: number,
     link: string,  // リンク
     year: '2023' | '2022' | 'past',  //制作した年
     genre: 'code' | 'design' | 'presentation' | 'document',  // 制作物のジャンル

@@ -11,7 +11,6 @@ type Output = {
 async function getAllArchives(client: any) {
     // const result = await client.query(``)
     const result: Archive = [{
-        id: 1,
         link: 'https://google-calendar-sandy.vercel.app/',
         year: '2023',
         genre: 'code',
@@ -26,7 +25,6 @@ async function getAllArchives(client: any) {
         tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS', 'PostgreSQL'],
         app: ['Visual Studio Code', 'PgAdmin']
     }, {
-        id: 2,
         link: 'https://2048-game-mauve.vercel.app/',
         year: '2023',
         genre: 'code',
@@ -41,7 +39,6 @@ async function getAllArchives(client: any) {
         tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS'],
         app: ['Visual Studio Code']
     }, {
-        id: 3,
         link: '',
         year: '2023',
         genre: 'code',
@@ -56,7 +53,6 @@ async function getAllArchives(client: any) {
         tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS', 'PostgreSQL'],
         app: ['Visual Studio Code', 'PgAdmin']
     }, {
-        id: 4,
         link: '',
         year: '2023',
         genre: 'code',
@@ -71,7 +67,6 @@ async function getAllArchives(client: any) {
         tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS'],
         app: ['Visual Studio Code', 'PgAdmin']
     }, {
-        id: 5,
         link: '',
         year: '2023',
         genre: 'code',
@@ -87,7 +82,6 @@ async function getAllArchives(client: any) {
         app: ['Visual Studio Code', 'PgAdmin']
     },
     {
-        id: 6,
         link: '',
         year: '2023',
         genre: 'code',
@@ -102,7 +96,6 @@ async function getAllArchives(client: any) {
         tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS'],
         app: ['Visual Studio Code', 'PgAdmin']
     }, {
-        id: 7,
         link: '',
         year: '2023',
         genre: 'code',
@@ -117,7 +110,6 @@ async function getAllArchives(client: any) {
         tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS'],
         app: ['Visual Studio Code', 'PgAdmin']
     }, {
-        id: 5,
         link: 'https://ryotaoku.github.io/zone/',
         year: '2022',
         genre: 'code',
@@ -136,7 +128,6 @@ async function getAllArchives(client: any) {
         ideaNote: 'TODO',
         video: 'TODO'
     }, {
-        id: 6,
         link: 'https://ryotaoku.github.io/Sluchay/',
         year: '2022',
         genre: 'code',
@@ -151,7 +142,6 @@ async function getAllArchives(client: any) {
         tech: ['HTML', 'CSS', 'JavaScript'],
         app: ['Visual Studio Code']
     }, {
-        id: 7,
         link: '',
         year: '2022',
         genre: 'code',
@@ -167,7 +157,6 @@ async function getAllArchives(client: any) {
         app: ['Visual Studio Code', 'Figma'],
         designComp: 'TODO'
     }, {
-        id: 8,
         link: '',
         year: '2022',
         genre: 'design',
@@ -182,7 +171,6 @@ async function getAllArchives(client: any) {
         tech: [],
         app: ['inDesign']
     }, {
-        id: 9,
         link: '',
         year: '2022',
         genre: 'design',
@@ -197,7 +185,6 @@ async function getAllArchives(client: any) {
         tech: [],
         app: ['Illustrator']
     }, {
-        id: 10,
         link: '',
         year: 'past',
         genre: 'presentation',
@@ -213,7 +200,6 @@ async function getAllArchives(client: any) {
         app: ['MS Power Point'],
         video: 'TODO'
     }, {
-        id: 11,
         link: '',
         year: 'past',
         genre: 'presentation',
@@ -229,7 +215,6 @@ async function getAllArchives(client: any) {
         app: ['MS Power Point'],
         video: 'TODO'
     }, {
-        id: 12,
         link: '',
         year: 'past',
         genre: 'presentation',
@@ -245,7 +230,6 @@ async function getAllArchives(client: any) {
         app: ['MS Power Point'],
         video: 'TODO'
     }, {
-        id: 13,
         link: '',
         year: 'past',
         genre: 'presentation',
@@ -261,7 +245,6 @@ async function getAllArchives(client: any) {
         app: ['MS Power Point'],
         video: 'TODO'
     }, {
-        id: 14,
         link: '',
         year: 'past',
         genre: 'presentation',

@@ -45,7 +45,6 @@ export default function Portfolio() {
 
     const [isModalVisible, setModalVisible] = useState(false);
     const [selectedArchive, setSelectedArchive] = useState<ArchiveItem>({
-        id: 0,
         link: '',
         year: '2023',
         genre: 'code',
