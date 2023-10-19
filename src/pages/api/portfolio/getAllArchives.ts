@@ -110,10 +110,10 @@ async function getAllArchives(client: any) {
         productionPeriod: '2023.11(未完成/開発終了)',
         fieldOfCharge: '1人で制作',
         image: '/images/portfolio/carlper.png',
-        title: '車で社会を元気に - carper(カルパー)',
-        summary: 'コーヒー専門店サイトの次の課題制作。',
+        title: 'Carper(カルパー)',
+        summary: '車を切り口に社会貢献',
         purpose: 'HTML・CSSを用いて静的なサイトを作成する',
-        explanation: '',
+        explanation: 'Zoneに続くWeb作品。生活保護受給者・シングルマザー / ファザーなどを対象に車を販売。「訳ありな車・事故車・譲り受けた車」を買い取り、格安で販売・リースするサービスです。お恥ずかしながら、コンセプトとデザインデータばかりに気が散って、お見せできるHTML/CSSファイルがありません。',
         tech: ['HTML', 'CSS', 'JavaScript'],
         app: ['Visual Studio Code', 'Figma']
     }, {
