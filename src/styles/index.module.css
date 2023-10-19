@@ -12,10 +12,18 @@
 }
 
 .wrap .archive {
-    padding: 1.5rem 2rem 1rem;
+    /* padding: 1.5rem 2rem 1rem; */
     overflow: hidden;
     grid-area: 1 / 2 / 2 / 3;
-    min-width: 868px
+    min-width: 868px;
+    position: relative;
+}
+
+.wrap .archive .header {
+    padding: 1.5rem 2rem 0;
+    position: sticky;
+    width: 100%;
+    top: 0;
 }
 
 .wrap .archive .archiveTitle {
@@ -111,4 +119,10 @@
     top: 0;
     bottom: 0;
     margin: auto 0;
+}
+
+.wrap .archive .archivesWrap {
+    overflow-y: scroll;
+    padding: 1rem 0 0 2rem;
+    height: calc(100% - 7rem);
 }

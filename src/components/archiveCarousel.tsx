@@ -17,18 +17,27 @@ export function ArchiveCarousel({ archives, filter, onArchiveClick }: ArchivePro
         return filter.condition.includes(archive.genre);
     });
 
-    const years = Array.from(new Set(filteredArchives.map(archive => archive.year))).sort((a, b) => {
-        if (a === 'past') return 1;
-        if (b === 'past') return -1;
-        return b.localeCompare(a);
-    });
+    const years = Array.from(new Set(filteredArchives.map(archive => archive.year)))
+        .sort((a, b) => {
+            if (a === 'past') return 1;
+            if (b === 'past') return -1;
+
+            const [yearA, termA] = a.split('年');
+            const [yearB, termB] = b.split('年');
+
+            if (parseInt(yearA) < parseInt(yearB)) return 1;
+            if (parseInt(yearA) > parseInt(yearB)) return -1;
+
+            return termA === '前期' ? 1 : -1;
+        });
+
 
     return (
         <div className={style.contentsWrap}>
             {years.map(year => (
                 <div key={year} className={style.contentsInner}>
                     <h3 className={style.contentsYear}>
-                        {year === 'past' ? 'それ以前' : `${year}年度`}
+                        {year === 'past' ? 'それ以前' : `${year}`}
                     </h3>
                     <div className={style.carousel}>
                         <div className={style.carouselWrap}>

@@ -46,7 +46,7 @@ export default function Portfolio() {
     const [isModalVisible, setModalVisible] = useState(false);
     const [selectedArchive, setSelectedArchive] = useState<ArchiveItem>({
         link: '',
-        year: '2023',
+        year: 'past',
         genre: 'code',
         recommend: false,
         productionPeriod: '',
@@ -83,46 +83,50 @@ export default function Portfolio() {
         <div className={style.wrap} style={sideProfile ? undefined : { gridTemplateColumns: '1rem 1fr' }}>
             <Profile sideProfile={sideProfile} setSideProfile={setSideProfile} />
             <div className={style.archive}>
-                <h2 className={style.archiveTitle}>奥綾太の作品一覧</h2>
-                <div className={style.change}>
-                    <div className={style.archiveChange}>
-                        <input type="radio" name="archive" checked={filter.archive === 'recommend'} id="recommend" onChange={() => {
-                            setFilter({
-                                ...filter,
-                                archive: 'recommend'
-                            })
-                        }} />
-                        <label htmlFor="recommend">おすすめ作品</label>
-                        <input type="radio" name="archive" checked={filter.archive === 'all'} id="all" onChange={() => {
-                            setFilter({
-                                ...filter,
-                                archive: 'all'
-                            })
-                        }} />
-                        <label htmlFor="all">全ての作品</label>
-                    </div>
-                    <div className={style.condition}>
-                        <div className={style.condition}>
-                            {radioOptions.map(option => (
-                                <div key={option.id}>
-                                    <input
-                                        type="radio"
-                                        name="condition"
-                                        id={option.id}
-                                        checked={filter.condition === option.id}  // ここを修正
-                                    // onChange={() => updateCondition(option.id)}
-                                    />
-                                    <label htmlFor={option.id} onClick={() => {
-                                        updateCondition(option.id)
-                                    }}>{option.label}</label>
-                                </div>
-                            ))}
+                <div className={style.header}>
+                    <h2 className={style.archiveTitle}>奥綾太の作品一覧</h2>
+                    <div className={style.change}>
+                        <div className={style.archiveChange}>
+                            <input type="radio" name="archive" checked={filter.archive === 'recommend'} id="recommend" onChange={() => {
+                                setFilter({
+                                    ...filter,
+                                    archive: 'recommend'
+                                })
+                            }} />
+                            <label htmlFor="recommend">おすすめ作品</label>
+                            <input type="radio" name="archive" checked={filter.archive === 'all'} id="all" onChange={() => {
+                                setFilter({
+                                    ...filter,
+                                    archive: 'all'
+                                })
+                            }} />
+                            <label htmlFor="all">全ての作品</label>
                         </div>
+                        <div className={style.condition}>
+                            <div className={style.condition}>
+                                {radioOptions.map(option => (
+                                    <div key={option.id}>
+                                        <input
+                                            type="radio"
+                                            name="condition"
+                                            id={option.id}
+                                            checked={filter.condition === option.id}  // ここを修正
+                                        // onChange={() => updateCondition(option.id)}
+                                        />
+                                        <label htmlFor={option.id} onClick={() => {
+                                            updateCondition(option.id)
+                                        }}>{option.label}</label>
+                                    </div>
+                                ))}
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-                <ArchiveCarousel archives={globalState.archives} filter={filter} onArchiveClick={handleArchiveClick} />
-                <ArchiveModal archive={selectedArchive} onClose={closeModal} visible={isModalVisible} />
+                <div className={style.archivesWrap}>
+                    <ArchiveCarousel archives={globalState.archives} filter={filter} onArchiveClick={handleArchiveClick} />
+                    <ArchiveModal archive={selectedArchive} onClose={closeModal} visible={isModalVisible} />
+                </div>
             </div>
         </div >
     )

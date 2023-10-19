@@ -12,7 +12,7 @@ async function getAllArchives(client: any) {
     // const result = await client.query(``)
     const result: Archive = [{
         link: 'https://google-calendar-sandy.vercel.app/',
-        year: '2023',
+        year: '2023前期',
         genre: 'code',
         recommend: false,
         productionPeriod: '2023.03~2023.04(1ヶ月半)',
@@ -26,7 +26,7 @@ async function getAllArchives(client: any) {
         app: ['Visual Studio Code', 'PgAdmin']
     }, {
         link: 'https://2048-game-mauve.vercel.app/',
-        year: '2023',
+        year: '2023前期',
         genre: 'code',
         recommend: true,
         productionPeriod: '2023.05~2023.06(2ヶ月)',
@@ -40,7 +40,7 @@ async function getAllArchives(client: any) {
         app: ['Visual Studio Code']
     }, {
         link: '',
-        year: '2023',
+        year: '2023後期',
         genre: 'code',
         recommend: true,
         productionPeriod: '2023.10~',
@@ -54,7 +54,7 @@ async function getAllArchives(client: any) {
         app: ['Visual Studio Code', 'PgAdmin']
     }, {
         link: '',
-        year: '2023',
+        year: '2023前期',
         genre: 'code',
         recommend: false,
         productionPeriod: '2023.07(1ヶ月)',
@@ -68,50 +68,49 @@ async function getAllArchives(client: any) {
         app: ['Visual Studio Code', 'PgAdmin']
     }, {
         link: '',
-        year: '2023',
+        year: '2023後期',
         genre: 'code',
         recommend: false,
         productionPeriod: '2023.09~2022.12(3ヶ月)',
         fieldOfCharge: 'チームで制作 / リーダー / デザイン・コード担当',
-        image: '/images/portfolio/customer.png',
+        image: '/images/portfolio/.png',
         title: '(ここに作品名)',
         summary: 'Webデザイナー向けのポートフォリオサポートツール',
         purpose: '型にハマらない効率的なチーム制作の進行・技術の共有',
         explanation: '希望進路・得意分野・将来の理想像などをもとに、ユーザーにさまざまなアドバイスを提供し、ポートフォリオ作成と、その過程の学習の手助けをする。<br>全体的なデザインは、「海外発のツール」をコンセプトに。<br>チームの目的を「共同制作で良いものを作る」ではなく(当然の為)、「チーム制作を通じて得るものを最大化させる」とし、後輩の意見を最大限尊重しながら制作。',
         tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS'],
         app: ['Visual Studio Code', 'PgAdmin']
-    },
-    {
+    }, {
         link: '',
-        year: '2023',
+        year: '2023後期',
         genre: 'code',
         recommend: false,
         productionPeriod: '2023.09~2022.12(3ヶ月)',
         fieldOfCharge: '1人で制作',
-        image: '/images/portfolio/customer.png',
-        title: '(ここに作品名)',
+        image: '/images/portfolio/.png',
+        title: '甘さの起源 - 人々の日常を追って',
         summary: 'はちみつを売りたいんだ その1',
         purpose: '商品の魅力を本質から離れた視点で伝える',
-        explanation: '「⚪︎⚪︎だからおすすめ！」「⚪︎⚪︎に大人気！」などの、商品の魅力をそのまま述べるのではなく、別の視点から遠回しに魅力を伝える力をつけるための課題。<br>「甘さの起源 - 人々の日常を追って」というショートドラマ形式で「はちみつの甘さ」の魅力を知ってもらう。<br><i>"日常生活の中で「甘い」という言葉や感覚に触れることは多い。しかし、その原点や本質的な甘さについて、私たちはどれだけ知っているのだろうか？"</i>',
+        explanation: '「⚪︎⚪︎だからおすすめ！」「⚪︎⚪︎に大人気！」などの、商品の魅力をそのまま述べるのではなく、別の視点から遠回しに魅力を伝える力をつけるための課題。<br>というショートドラマ形式で「はちみつの甘さ」の魅力を知ってもらう。<br><i>"日常生活の中で「甘い」という言葉や感覚に触れることは多い。しかし、その原点や本質的な甘さについて、私たちはどれだけ知っているのだろうか？"</i>',
         tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS'],
         app: ['Visual Studio Code', 'PgAdmin']
     }, {
         link: '',
-        year: '2023',
+        year: '2023後期',
         genre: 'code',
         recommend: false,
         productionPeriod: '2023.09~2022.12(3ヶ月)',
         fieldOfCharge: '1人で制作',
-        image: '/images/portfolio/customer.png',
-        title: '(ここに作品名)',
+        image: '/images/portfolio/.png',
+        title: '赤の甘さ、時代を超えて',
         summary: 'はちみつを売りたいんだ その2',
         purpose: '商品の魅力を本質から離れた視点で伝える',
-        explanation: '「⚪︎⚪︎だからおすすめ！」「⚪︎⚪︎に大人気！」などの、商品の魅力をそのまま述べるのではなく、別の視点から遠回しに魅力を伝える力をつけるための課題。<br>「赤の甘さ、時代を超えて」というショートドラマ形式で、「はちみつの持つ甘さが世界平和をもたらす」という壮大なストーリを演出(ただの制作者の好み)。<br><i>"我々は違う意見や価値観を持っている。でも、このはちみつのように、根底には共通するものがある。"</i>',
+        explanation: '「⚪︎⚪︎だからおすすめ！」「⚪︎⚪︎に大人気！」などの、商品の魅力をそのまま述べるのではなく、別の視点から遠回しに魅力を伝える力をつけるための課題。<br>ショートドラマ形式で、「はちみつの持つ甘さが世界平和をもたらす」という壮大なストーリを演出(ただの制作者の好み)。<br><i>"我々は違う意見や価値観を持っている。でも、このはちみつのように、根底には共通するものがある。"</i>',
         tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS'],
         app: ['Visual Studio Code', 'PgAdmin']
     }, {
         link: 'https://ryotaoku.github.io/zone/',
-        year: '2022',
+        year: '2022前期',
         genre: 'code',
         recommend: true,
         productionPeriod: '2022.06~2022.08(2ヶ月)',
@@ -129,7 +128,7 @@ async function getAllArchives(client: any) {
         video: 'TODO'
     }, {
         link: 'https://ryotaoku.github.io/Sluchay/',
-        year: '2022',
+        year: '2022後期',
         genre: 'code',
         recommend: true,
         productionPeriod: '2023.10(1ヶ月)',
@@ -143,7 +142,7 @@ async function getAllArchives(client: any) {
         app: ['Visual Studio Code']
     }, {
         link: '',
-        year: '2022',
+        year: '2022後期',
         genre: 'code',
         recommend: false,
         productionPeriod: '2023.11(未完成/開発終了)',
@@ -158,10 +157,10 @@ async function getAllArchives(client: any) {
         designComp: 'TODO'
     }, {
         link: '',
-        year: '2022',
+        year: '2022前期',
         genre: 'design',
         recommend: true,
-        productionPeriod: '2023年9月(1日)',
+        productionPeriod: '2023.09(1日)',
         fieldOfCharge: '1人で制作',
         image: '/images/portfolio/gorbachev.png',
         title: '初めてのDTP作成 - ゴルバチョフとは',
@@ -172,7 +171,21 @@ async function getAllArchives(client: any) {
         app: ['inDesign']
     }, {
         link: '',
-        year: '2022',
+        year: '2022後期',
+        genre: 'design',
+        recommend: true,
+        productionPeriod: '2023.12(1ヶ月)',
+        fieldOfCharge: '1人で制作',
+        image: '/images/portfolio/.png',
+        title: 'ドラマティックに脱出せよ！',
+        summary: '条件に沿って脱出ドラマを作成',
+        purpose: 'コンセプトを考える・プレゼン練習',
+        explanation: '条件は、<br>①脱出する過程におけるコンセプトを考え、それに沿って脱出すること。<br>②指定されたアイテムを使うこと。<br>③指定されたアイテム以外に新アイテムを考え、使用すること<br>の3つ。作成資料を破棄したのでプレゼン動画しかないのが悔やまれる。',
+        tech: [],
+        app: ['Illustrator']
+    }, {
+        link: '',
+        year: '2022後期',
         genre: 'design',
         recommend: true,
         productionPeriod: '2023.01(半月)',
@@ -184,7 +197,8 @@ async function getAllArchives(client: any) {
         explanation: '大阪市北区の中崎町で実際に開かれる「中崎町キャンドルナイト」のポスターデザイン。<br>ありがたいことに毎年ECCのWebデザインコース生徒の作品から実際に使用されるらしく、私のデザインはしおりの表紙になった。今見てみると、メインの画像ありきのデザインになってしまっている。',
         tech: [],
         app: ['Illustrator']
-    }, {
+    },
+    {
         link: '',
         year: 'past',
         genre: 'presentation',

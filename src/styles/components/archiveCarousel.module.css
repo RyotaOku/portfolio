@@ -1,15 +1,9 @@
 .contentsWrap {
-    margin-top: 1rem;
-    height: calc(100% - 7rem);
+    height: 100%;
 }
 
 .contentsWrap .contentsInner {
-    margin-top: 2.5%;
-    height: 30.5%;
-}
-
-.contentsWrap .contentsInner:first-of-type {
-    margin-top: 0;
+    margin-bottom: 2.5%;
 }
 
 .contentsWrap .carousel {

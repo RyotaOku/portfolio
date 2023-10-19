@@ -1,6 +1,6 @@
 export type ArchiveItem = {
     link: string,  // リンク
-    year: '2023' | '2022' | 'past',  //制作した年
+    year: '2023後期' | '2023前期' | '2022後期' | '2022前期' | 'past',  //制作した年
     genre: 'code' | 'design' | 'presentation' | 'document',  // 制作物のジャンル
     recommend: boolean,  // おすすめの作品かどうか
     productionPeriod: string,  //　制作期間
