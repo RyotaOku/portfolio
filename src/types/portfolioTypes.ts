@@ -13,7 +13,11 @@ export type ArchiveItem = {
     explanation: string,  // 説明
     tech: string[],  // 使用技術
     app: string[],  // 使用ソフト
-    beta?: string
+    beta?: string,
+    ideaNote?: string,
+    presentation?: string,
+    document?: string,
+    otherDesign?: string
 }
 
 export type Archive = ArchiveItem[];
