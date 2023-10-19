@@ -72,22 +72,23 @@ async function getAllArchives(client: any) {
         app: ['Visual Studio Code', 'PgAdmin']
     }, {
         id: 5,
-        link: '',
+        link: 'https://ryotaoku.github.io/zone/',
         year: '2022',
         genre: 'code',
         recommend: true,
         productionPeriod: '2022.06~2022.08(2ヶ月)',
         fieldOfCharge: '1人で制作',
         image: '/images/portfolio/zone.png',
-        title: '初めてのWebサイト制作 - ZONE',
-        summary: 'コーヒー専門店をテーマにしたサイト作成。',
+        title: 'ZONE',
+        summary: 'コーヒー専門店がテーマの初めてのサイト作成。',
         purpose: 'HTML・CSSを用いて静的なサイトを作成する',
         explanation: '',
         tech: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
-        app: ['Visual Studio Code', 'Figma', 'Illustrator',]
+        app: ['Visual Studio Code', 'Figma', 'Illustrator'],
+        beta: 'https://ryotaoku.github.io/zone-beta/'
     }, {
         id: 6,
-        link: '',
+        link: 'https://ryotaoku.github.io/Sluchay/',
         year: '2022',
         genre: 'code',
         recommend: true,
@@ -95,7 +96,7 @@ async function getAllArchives(client: any) {
         fieldOfCharge: '1人で制作',
         image: '/images/portfolio/junban.png',
         title: 'Случай(スルチャイ)',
-        summary: 'Webコースの授業内でプレゼンの順番を決める際などに実際に使用。',
+        summary: '任意の文字列をランダムに並べ変える',
         purpose: '純粋なJavaScriptを理解する・配列を理解する',
         explanation: '',
         tech: ['HTML', 'CSS', 'JavaScript'],

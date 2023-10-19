@@ -11,8 +11,7 @@
 }
 
 .archiveInner {
-    /* padding: 2rem 1.5rem 1rem; */
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem 0;
     color: #262626;
 }
 
@@ -110,9 +109,10 @@
     color: #fff;
     cursor: pointer;
     transition: 0.1s;
+    margin-right: 0.6rem;
 }
 
-.archiveInner .contentText .productOperate .button:hover {
+.archiveInner .contentText .productOperate .button:not(:disabled):hover {
     background: #155cc0;
 }
 

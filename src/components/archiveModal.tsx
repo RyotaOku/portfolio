@@ -1,7 +1,8 @@
 
-import styles from '@/styles/modal.module.css'
+import styles from '@/styles/components/modal.module.css'
 import { ArchiveItem } from '../types/portfolioTypes';
 import { Dialog } from 'primereact/dialog';
+import { isButtonElement } from 'react-router-dom/dist/dom';
 
 type props = {
     archive: ArchiveItem,
@@ -12,9 +13,12 @@ type props = {
 export function ArchiveModal({ archive, onClose, visible }: props) {
     const cursorStyle = archive.link ? { cursor: 'pointer' } : {};
 
-    const handleImageClick = () => {
-        if (archive.link) {
+    const handleClick = (link: string) => {
+        if (archive.link && link === 'link') {
             window.open(archive.link);
+        }
+        if (archive.beta && link === 'beta') {
+            window.open(archive.beta);
         }
     };
 
@@ -36,7 +40,7 @@ export function ArchiveModal({ archive, onClose, visible }: props) {
         >
             <div className={styles.archiveInner}>
                 <div className={styles.summaryWrap}>
-                    <picture className={styles.imgWrap} style={cursorStyle} onClick={handleImageClick}>
+                    <picture className={styles.imgWrap} style={cursorStyle} onClick={() => { handleClick('link') }}>
                         <img src={archive.image} alt="" className={styles.background} />
                         <img src={archive.image} alt="" />
                     </picture>
@@ -58,9 +62,10 @@ export function ArchiveModal({ archive, onClose, visible }: props) {
                             <button
                                 disabled={!archive.link}
                                 className={styles.button}
-                                onClick={handleImageClick}>
+                                onClick={() => { handleClick('link') }}>
                                 サイトを見る
                             </button>
+                            {archive.beta && <button className={styles.button} onClick={() => { handleClick('beta') }}>ベータ版を見る</button>}
                         </div>
                     </div>
                 </div>

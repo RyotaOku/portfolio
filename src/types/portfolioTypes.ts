@@ -12,7 +12,8 @@ export type ArchiveItem = {
     purpose: string,  // 目的
     explanation: string,  // 説明
     tech: string[],  // 使用技術
-    app: string[]  // 使用ソフト
+    app: string[],  // 使用ソフト
+    beta?: string
 }
 
 export type Archive = ArchiveItem[];
