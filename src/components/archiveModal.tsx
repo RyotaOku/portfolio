@@ -66,6 +66,10 @@ export function ArchiveModal({ archive, onClose, visible }: props) {
                                 サイトを見る
                             </button>
                             {archive.beta && <button className={styles.button} onClick={() => { handleClick('beta') }}>ベータ版を見る</button>}
+                            {archive.presentation && <button className={styles.button} onClick={() => { handleClick('presentation') }}>プレゼンテーションを見る</button>}
+                            {archive.document && <button className={styles.button} onClick={() => { handleClick('document') }}>ドキュメントを見る</button>}
+                            {archive.ideaNote && <button className={styles.button} onClick={() => { handleClick('ideaNote') }}>アイデアノートを見る</button>}
+                            {archive.otherDesign && <button className={styles.button} onClick={() => { handleClick('otherDesign') }}>その他デザインを見る</button>}
                         </div>
                     </div>
                 </div>
