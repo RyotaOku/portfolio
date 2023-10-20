@@ -58,6 +58,20 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     link: '',
                     year: '2023前期',
                     genre: 'code',
+                    recommend: true,
+                    productionPeriod: '2023.04~2023.05(2ヶ月)',
+                    fieldOfCharge: '1人で制作',
+                    image: '/images/portfolio/puisto.png',
+                    title: 'ぷいぷいストレージ',
+                    summary: '自作のクラウドストレージ',
+                    purpose: 'DBでの階層構造を知る・バックエンドの理解を深める',
+                    explanation: 'バックエンドとDBをある程度触れるようになったので、クラウドストレージを作ってみようと思い作成。reducerやactioncreatorをほとんど用いず、感覚でガリガリ書いていったのでデバッグが追いついていない。データの追加・削除・変更はもちろん、PDF・IMAGEであればローカルになくても閲覧可能に。この時が一番コード書いて試行錯誤していたかも。',
+                    tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS'],
+                    app: ['Visual Studio Code']
+                }, {
+                    link: '',
+                    year: '2023前期',
+                    genre: 'code',
                     recommend: false,
                     productionPeriod: '2023.07(1ヶ月)',
                     fieldOfCharge: '1人で制作',
@@ -97,13 +111,13 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS'],
                     app: ['Visual Studio Code', 'PgAdmin']
                 }, {
-                    link: '',
+                    link: 'https://uni-ride.vercel.app/smartphoneApp/startPage/accountRegistration',
                     year: '2023後期',
                     genre: 'code',
                     recommend: true,
                     productionPeriod: '2023.09(2週間)',
                     fieldOfCharge: 'チームで制作 / リーダー / デザイン・コード担当',
-                    image: '/images/portfolio/.png',
+                    image: '/images/portfolio/uniride.png',
                     title: 'UniRide(ユニライド)',
                     summary: '大学生向けのタクシー乗車×マッチングアプリ',
                     purpose: 'チームで',
@@ -153,9 +167,9 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     tech: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
                     app: ['Visual Studio Code', 'Figma', 'Illustrator'],
                     beta: 'https://ryotaoku.github.io/zone-beta/',
-                    otherDesign: 'TODO',
-                    ideaNote: 'TODO',
-                    video: 'TODO'
+                    otherDesign: '/images/portfolio/zoneDesign.png',
+                    ideaNote: '/images/portfolio/idea.png',
+                    video: '/videos/cafe_presen.mov'
                 }, {
                     link: '',
                     year: '2022前期',
@@ -174,24 +188,10 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     link: '',
                     year: '2022前期',
                     genre: 'design',
-                    recommend: true,
-                    productionPeriod: '2023.05(1日)',
-                    fieldOfCharge: '1人で制作',
-                    image: '/images/portfolio/.png',
-                    title: '自己紹介シート作成',
-                    summary: 'DTPについて学ぶ授業の課題',
-                    purpose: 'Illustratorの基本的な使用方法を学ぶ',
-                    explanation: 'みんながまだ初めましての時期。自分を知ってもらうための要素と、自分の写真を入れた1枚のシートを作成。高校生時代の文化祭の写真Ver.とモルカーコンセプトVer.の2つを作成。',
-                    tech: [],
-                    app: ['inDesign']
-                }, {
-                    link: '',
-                    year: '2022前期',
-                    genre: 'design',
-                    recommend: true,
+                    recommend: false,
                     productionPeriod: '2023.07(1日)',
                     fieldOfCharge: '1人で制作',
-                    image: '/images/portfolio/.png',
+                    image: '/images/portfolio/prauda.png',
                     title: '雑誌表紙 - 月刊プラウダ',
                     summary: 'デザイン授業の課題',
                     purpose: 'デザインの基本を学ぶ',
@@ -205,7 +205,7 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     recommend: false,
                     productionPeriod: '2023.09(2週間)',
                     fieldOfCharge: 'チームで制作 / コード実装担当',
-                    image: '/images/portfolio/.png',
+                    image: '/images/portfolio/hobit.png',
                     title: 'ほびっと！',
                     summary: '新たな趣味を見つけるアプリ',
                     purpose: 'テーマに沿ったコンテンツを考える',
@@ -240,26 +240,28 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     explanation: 'Zoneに続くWeb作品。生活保護受給者・シングルマザー / ファザーなどを対象に車を販売。「訳ありな車・事故車・譲り受けた車」を買い取り、格安で販売・リースするサービス。<br>お恥ずかしながら、コンセプトとデザインデータばかりに気が散って、お見せできるHTML/CSSファイルがない。',
                     tech: ['HTML', 'CSS', 'JavaScript'],
                     app: ['Visual Studio Code', 'Figma'],
-                    designComp: 'TODO'
+                    designComp: 'TODO',
+                    video: 'TODO'
                 }, {
                     link: '',
                     year: '2022後期',
-                    genre: 'design',
+                    genre: 'presentation',
                     recommend: true,
                     productionPeriod: '2023.12(1ヶ月)',
                     fieldOfCharge: '1人で制作',
-                    image: '/images/portfolio/.png',
+                    image: '/images/portfolio/dramatic.png',
                     title: 'ドラマティックに脱出せよ！',
                     summary: '条件に沿って脱出ドラマを作成',
                     purpose: 'コンセプトを考える・プレゼン練習',
                     explanation: '条件は、<br>①脱出する過程におけるコンセプトを考え、それに沿って脱出すること。<br>②指定されたアイテムを使うこと。<br>③指定されたアイテム以外に新アイテムを考え、使用すること<br>の3つ。作成資料を破棄したのでプレゼン動画しかないのが悔やまれる。',
                     tech: [],
-                    app: ['Illustrator']
+                    app: ['Illustrator'],
+                    video: '/videos/exitPresen.mp4'
                 }, {
                     link: '',
                     year: '2022後期',
                     genre: 'design',
-                    recommend: true,
+                    recommend: false,
                     productionPeriod: '2023.01(半月)',
                     fieldOfCharge: '1人で制作',
                     image: '/images/portfolio/candle.png',
@@ -273,10 +275,10 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     link: '',
                     year: '2022後期',
                     genre: 'design',
-                    recommend: true,
+                    recommend: false,
                     productionPeriod: '2023.01(1日)',
                     fieldOfCharge: '1人で制作',
-                    image: '/images/portfolio/candle.png',
+                    image: '/images/portfolio/abe.png',
                     title: '安倍晋三暗殺事件の真実',
                     summary: '中身の世界観を体現した表紙作成',
                     purpose: 'デザインの基本を学ぶ',
@@ -290,14 +292,14 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     recommend: false,
                     productionPeriod: '2021.05~2021.07(2ヶ月半)',
                     fieldOfCharge: '1人で制作',
-                    image: '/images/portfolio/smart.png',
+                    image: '/images/portfolio/firstPresen.png',
                     title: 'スマホの歴史調査 進捗プレゼン1',
                     summary: '高校授業の一環。スマホの歴史を調査。',
                     purpose: 'デザインに気を配り、見る側の視点に立ったプレゼン資料を作る',
                     explanation: '「スマートフォンの歴史と今後の予測」を1年間で調査研究し、発表するという高校授業の制作物。<br>第一回発表では現在の大きな進化点(折りたたみスマホの登場・ペリスコープレンズによるカメラの進化)を紹介し、今後の調査の流れを紹介。よくある白背景黒文字ベースのプレゼン資料で、整理されているようで整理されておらず、ゴチャゴチャした印象を受ける。',
                     tech: [],
                     app: ['MS Power Point'],
-                    video: 'TODO'
+                    video: '/videos/firstPresen.mp4'
                 }, {
                     link: '',
                     year: 'past',
@@ -312,7 +314,7 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     explanation: '「スマートフォンの歴史と今後の予測」を1年間で調査研究し、発表するという高校授業の制作物。<br>第二回発表では高校内でのスマホOSシェアと、スマホに求めるものなどをアンケートし、その結果を発表。従来の白背景・黒文字ベースのデザインから、型にハマらないプレゼン資料の作成を試みる。',
                     tech: [],
                     app: ['MS Power Point'],
-                    video: 'TODO'
+                    video: 'videos/secondPresen.mp4'
                 }, {
                     link: '',
                     year: 'past',
@@ -327,7 +329,7 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     explanation: '「スマートフォンの歴史と今後の予測」を1年間で調査研究し、発表するという高校授業の制作物。<br>第3回発表では 進化の現状・アンケート結果の詳細な発表・進化の予測 の3つに分けて調査の進捗を報告。PowerPointのアニメーションをふんだんに使う、パワポ初心者が99%陥るアニメーションの罠に引っかかりながら資料を制作。',
                     tech: [''],
                     app: ['MS Power Point'],
-                    video: 'TODO'
+                    video: '/videos/thirdPresen.mp4'
                 }, {
                     link: '',
                     year: 'past',
@@ -342,7 +344,7 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     explanation: '「スマートフォンの歴史と今後の予測」を1年間で調査研究し、発表するという高校授業の制作物。<br>最終報告では、"聞いてもらう"ための最大限の配慮から、クイズや時系列でテンポよく進むように。アニメーションがたくさん使用されており、またフォントの不一致などから動画資料ではズレがある。',
                     tech: [''],
                     app: ['MS Power Point'],
-                    video: 'TODO'
+                    video: '/videos/lastPresen.mp4'
                 }, {
                     link: '',
                     year: 'past',
@@ -356,7 +358,8 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     purpose: 'プレゼンの基本を学ぶ',
                     explanation: 'プレゼンの基本を学ぶための課題。おすすめの100均アイテムを紹介するプレゼンを作成。<br>白背景・黒文字のよくあるプレゼン資料から少し手を加えてデザインを考慮。',
                     tech: [''],
-                    app: ['MS Power Point']
+                    app: ['MS Power Point'],
+                    video: '/videos/100Presen.mp4'
                 }
                 ]
         });

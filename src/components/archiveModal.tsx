@@ -17,9 +17,15 @@ export function ArchiveModal({ archive, onClose, visible }: props) {
     const handleClick = (link: string) => {
         if (archive.link && link === 'link') {
             window.open(archive.link);
+            return
         }
         if (archive.beta && link === 'beta') {
             window.open(archive.beta);
+            return
+        }
+        if (link === 'presen') {
+            window.open(archive.video, "_blank", "noopener noreferrer");
+            return;
         }
     };
 
@@ -89,13 +95,14 @@ export function ArchiveModal({ archive, onClose, visible }: props) {
                             ))}
                         </ul>
                         <div className={styles.productOperate}>
-                            <button
-                                disabled={!archive.link}
-                                className={styles.button}
-                                onClick={() => { handleClick('link') }}>
-                                サイトを見る
-                            </button>
-                            {archive.beta && <button className={styles.button} onClick={() => { handleClick('beta') }}>ベータ版を見る</button>}
+                            {archive.genre === 'code' && (
+                                <>
+                                    <button disabled={!archive.link} className={styles.button} onClick={() => { handleClick('link') }}>サイトを見る</button>
+                                    {archive.beta && <button className={styles.button} onClick={() => { handleClick('beta') }}>ベータ版を見る</button>}
+                                </>
+                            )}
+                            {archive.genre === 'design' && <button className={styles.button} onClick={() => { handleClick('image') }}>拡大表示</button>}
+                            {archive.genre === 'presentation' && <button className={styles.button} onClick={() => { handleClick('presen') }}>プレゼン動画を見る</button>}
                             {archive.presentation && <button className={styles.button} onClick={() => { handleClick('presentation') }}>プレゼンテーションを見る</button>}
                             {archive.document && <button className={styles.button} onClick={() => { handleClick('document') }}>ドキュメントを見る</button>}
                             {archive.ideaNote && <button className={styles.button} onClick={() => { handleClick('ideaNote') }}>アイデアノートを見る</button>}
