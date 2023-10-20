@@ -2,8 +2,6 @@
 import styles from '@/styles/components/modal.module.css'
 import { ArchiveItem } from '../types/portfolioTypes';
 import { Dialog } from 'primereact/dialog';
-import { isButtonElement } from 'react-router-dom/dist/dom';
-import { useEffect, useState } from 'react'
 
 type props = {
     archive: ArchiveItem,
@@ -12,20 +10,47 @@ type props = {
 }
 
 export function ArchiveModal({ archive, onClose, visible }: props) {
-    const cursorStyle = archive.link ? { cursor: 'pointer' } : {};
+    const cursorStyle = { cursor: '' }
+
+    switch (archive.genre) {
+        case 'code': archive.link === '' ? undefined : cursorStyle.cursor = 'pointer';
+            break;
+        case 'design': archive.image === '' ? undefined : cursorStyle.cursor = 'pointer';
+            break;
+        case 'presentation': archive.video === '' ? undefined : cursorStyle.cursor = 'pointer';
+            break;
+        default: cursorStyle.cursor = '';
+    }
 
     const handleClick = (link: string) => {
-        if (archive.link && link === 'link') {
-            window.open(archive.link);
-            return
-        }
-        if (archive.beta && link === 'beta') {
-            window.open(archive.beta);
-            return
-        }
-        if (link === 'presen') {
-            window.open(archive.video, "_blank", "noopener noreferrer");
-            return;
+        switch (link) {
+            case 'link': {
+                window.open(archive.link);
+                break;
+            }
+            case 'beta': {
+                window.open(archive.beta);
+                break;
+            }
+            case 'presen': {
+                window.open(archive.video, "_blank", "noopener noreferrer");
+                break;
+            }
+            case 'image': {
+                window.open(archive.image, "_blank", "noopener noreferrer");
+                break;
+            }
+            case 'idea': {
+                window.open(archive.ideaNote, "_blank", "noopener noreferrer");
+                break;
+            }
+            case 'otherDesign': {
+                window.open(archive.otherDesign, "_blank", "noopener noreferrer");
+                break;
+            }
+            default: {
+                break;
+            }
         }
     };
 
@@ -52,7 +77,7 @@ export function ArchiveModal({ archive, onClose, visible }: props) {
                     elements.push(currentText);
                     elements.push(<i key={i}>{explanation.substring(i + 3, end)}</i>);
                     currentText = "";
-                    i = end + 3; // skip next 3 characters and the closing </i>
+                    i = end + 3;
                 } else {
                     currentText += explanation[i];
                 }
@@ -76,7 +101,20 @@ export function ArchiveModal({ archive, onClose, visible }: props) {
         >
             <div className={styles.archiveInner}>
                 <div className={styles.summaryWrap}>
-                    <picture className={styles.imgWrap} style={cursorStyle} onClick={() => { handleClick('link') }}>
+                    <picture className={styles.imgWrap} style={cursorStyle} onClick={() => {
+                        let link = ''
+                        switch (archive.genre) {
+                            case 'code': archive.link === '' ? undefined : link = 'link'
+                                break;
+                            case 'design': archive.image === '' ? undefined : link = 'image'
+                                break;
+                            case 'presentation': archive.presentation === '' ? undefined : link = 'presen'
+                                break;
+                            default:
+                                break;
+                        }
+                        handleClick(link)
+                    }}>
                         <img src={archive.image} alt="" className={styles.background} />
                         <img src={archive.image} alt="" />
                     </picture>
@@ -97,20 +135,18 @@ export function ArchiveModal({ archive, onClose, visible }: props) {
                         <div className={styles.productOperate}>
                             {archive.genre === 'code' && (
                                 <>
-                                    <button disabled={!archive.link} className={styles.button} onClick={() => { handleClick('link') }}>サイトを見る</button>
-                                    {archive.beta && <button className={styles.button} onClick={() => { handleClick('beta') }}>ベータ版を見る</button>}
+                                    <button disabled={!archive.link} className={styles.button} onClick={() => { handleClick('link') }}>サイト</button>
+                                    {archive.beta && <button className={styles.button} onClick={() => { handleClick('beta') }}>ベータ版</button>}
                                 </>
                             )}
                             {archive.genre === 'design' && <button className={styles.button} onClick={() => { handleClick('image') }}>拡大表示</button>}
-                            {archive.genre === 'presentation' && <button className={styles.button} onClick={() => { handleClick('presen') }}>プレゼン動画を見る</button>}
-                            {archive.presentation && <button className={styles.button} onClick={() => { handleClick('presentation') }}>プレゼンテーションを見る</button>}
-                            {archive.document && <button className={styles.button} onClick={() => { handleClick('document') }}>ドキュメントを見る</button>}
-                            {archive.ideaNote && <button className={styles.button} onClick={() => { handleClick('ideaNote') }}>アイデアノートを見る</button>}
-                            {archive.otherDesign && <button className={styles.button} onClick={() => { handleClick('otherDesign') }}>その他デザインを見る</button>}
+                            {archive.genre === 'presentation' && <button className={styles.button} onClick={() => { handleClick('presen') }}>プレゼン動画</button>}
+                            {archive.ideaNote && <button className={styles.button} onClick={() => { handleClick('idea') }}>アイデアノート</button>}
+                            {archive.otherDesign && <button className={styles.button} onClick={() => { handleClick('otherDesign') }}>その他デザイン</button>}
                         </div>
                     </div>
                 </div>
             </div>
-        </Dialog>
+        </Dialog >
     )
 }

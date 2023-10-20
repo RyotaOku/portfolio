@@ -14,6 +14,10 @@
     padding-bottom: 0.2rem;
 }
 
+.contentsWrap .contentsInner:last-of-type .carousel {
+    padding-bottom: 2rem;
+}
+
 .contentsWrap .carousel::-webkit-scrollbar {
     background: transparent;
     height: 6px;

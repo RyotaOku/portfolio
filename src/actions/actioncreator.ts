@@ -111,7 +111,7 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS'],
                     app: ['Visual Studio Code', 'PgAdmin']
                 }, {
-                    link: 'https://uni-ride.vercel.app/smartphoneApp/startPage/accountRegistration',
+                    link: 'https://uni-ride.vercel.app/smartphoneApp/startPage/',
                     year: '2023後期',
                     genre: 'code',
                     recommend: true,
@@ -121,7 +121,7 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     title: 'UniRide(ユニライド)',
                     summary: '大学生向けのタクシー乗車×マッチングアプリ',
                     purpose: 'チームで',
-                    explanation: 'インターンシップ終了後初めての学校授業参加。初めてチームリーダーとして制作を主導する役割をいただいた。その中で「いい作品を作る」は当たり前として、「チーム制作を通じて得るものを最大化する」を目標に。動的でDB',
+                    explanation: 'インターンシップ終了後初めての学校授業参加。初めてチームリーダーとして制作を主導する役割をいただいた。その中で「いい作品を作る」は当たり前として、「チーム制作を通じて得るものを最大化する」を目標に。スマホ用UIを確認する拡張機能で綺麗にみられる。なければ開発者ツールで縮小表示する。',
                     tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS'],
                     app: ['Visual Studio Code', 'PgAdmin']
                 }, {
@@ -344,7 +344,7 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     explanation: '「スマートフォンの歴史と今後の予測」を1年間で調査研究し、発表するという高校授業の制作物。<br>最終報告では、"聞いてもらう"ための最大限の配慮から、クイズや時系列でテンポよく進むように。アニメーションがたくさん使用されており、またフォントの不一致などから動画資料ではズレがある。',
                     tech: [''],
                     app: ['MS Power Point'],
-                    video: '/videos/lastPresen.mp4'
+                    video: '/videos/lastPresen.mov'
                 }, {
                     link: '',
                     year: 'past',

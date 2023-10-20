@@ -102,10 +102,10 @@
     min-width: 6rem;
 }
 
-.archiveInner .contentText .archiveList li .text {}
-
 .archiveInner .contentText .productOperate {
     grid-area: 4 / 1 / 5 / 2;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .archiveInner .contentText .productOperate .button {
@@ -115,7 +115,8 @@
     color: #fff;
     cursor: pointer;
     transition: 0.1s;
-    margin-right: 0.6rem;
+    margin-right: 0.4rem;
+    white-space: nowrap;
 }
 
 .archiveInner .contentText .productOperate .button:not(:disabled):hover {

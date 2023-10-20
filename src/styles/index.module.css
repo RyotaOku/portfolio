@@ -3,7 +3,7 @@
     height: 100vh;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 29rem 1fr;
+    grid-template-columns: 26rem 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;

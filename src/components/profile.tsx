@@ -1,4 +1,5 @@
 import style from '@/styles/components/profile.module.css'
+import Link from 'next/link'
 
 type props = {
     sideProfile: boolean,
@@ -27,10 +28,12 @@ export function Profile({ sideProfile, setSideProfile }: props) {
                 </section>
                 <section className={style.profileWrap + ' ' + style.contactWrap}>
                     <h3 className={style.title}>Contact</h3>
-                    <p className={style.email}><i className='pi pi-envelope'></i>ryota1991o@gmail.com</p>
-                    <p className={style.tel}><i className='pi pi-phone'></i>070-8598-8341</p>
-                    <p className={style.twitter}><i className='pi pi-twitter'></i>@Ryota11_07</p>
-                    <p className={style.instagram}><i className='pi pi-instagram'></i>ryota11_07</p>
+                    <address>
+                        <p className={style.email}><Link className={style.link} target='_blank' href={'mailto:ryota1991o@gmail.com'}><i className='pi pi-envelope'></i>ryota1991o@gmail.com</Link></p>
+                        <p className={style.tel}><Link className={style.link} target='_blank' href={'tel:07085988341'}><i className='pi pi-phone'></i>070-8598-8341</Link></p>
+                        <p className={style.twitter}><Link className={style.link} target='_blank' href={'https://twitter.com/Ryota11_07'}><i className='pi pi-twitter'></i>@Ryota11_07</Link></p>
+                        <p className={style.instagram}><Link className={style.link} target='_blank' href={'https://www.instagram.com/ryota11_07/'}><i className='pi pi-instagram'></i>ryota11_07</Link></p>
+                    </address>
                 </section>
                 <div className={style.switch} onClick={() => {
                     sideProfile ? setSideProfile(false) : setSideProfile(true)
