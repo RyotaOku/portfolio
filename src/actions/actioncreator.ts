@@ -56,20 +56,6 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     app: ['Visual Studio Code']
                 }, {
                     link: '',
-                    year: '2023後期',
-                    genre: 'code',
-                    recommend: true,
-                    productionPeriod: '2023.10~',
-                    fieldOfCharge: '1人で制作',
-                    image: '/images/portfolio/mac.png',
-                    title: 'Reactで再現するmacOS',
-                    summary: 'フロントエンドエンジニアとしての意地。',
-                    purpose: 'フロント/バックエンド両方をバランスよく習得する',
-                    explanation: 'Reactを学び始めた頃、フロントエンドエンジニアとしての意地で、フロントエンドのみでmacOSを再現することを目標に制作。現在はmacOSのデスクトップ画面を再現することに成功。今後は、macOSのアプリケーションを再現することを目標に制作を続ける。',
-                    tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS', 'PostgreSQL'],
-                    app: ['Visual Studio Code', 'PgAdmin']
-                }, {
-                    link: '',
                     year: '2023前期',
                     genre: 'code',
                     recommend: false,
@@ -86,6 +72,20 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     link: '',
                     year: '2023後期',
                     genre: 'code',
+                    recommend: true,
+                    productionPeriod: '2023.10~',
+                    fieldOfCharge: '1人で制作',
+                    image: '/images/portfolio/mac.png',
+                    title: 'Reactで再現するmacOS',
+                    summary: 'フロントエンドエンジニアとしての意地。',
+                    purpose: 'フロント/バックエンド両方をバランスよく習得する',
+                    explanation: 'Reactを学び始めた頃、フロントエンドエンジニアとしての意地で、フロントエンドのみでmacOSを再現することを目標に制作。現在はmacOSのデスクトップ画面を再現することに成功。今後は、macOSのアプリケーションを再現することを目標に制作を続ける。',
+                    tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS', 'PostgreSQL'],
+                    app: ['Visual Studio Code', 'PgAdmin']
+                }, {
+                    link: '',
+                    year: '2023後期',
+                    genre: 'code',
                     recommend: false,
                     productionPeriod: '2023.09~2022.12(3ヶ月)',
                     fieldOfCharge: 'チームで制作 / リーダー / デザイン・コード担当',
@@ -94,6 +94,20 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     summary: 'Webデザイナー向けのポートフォリオサポートツール',
                     purpose: '型にハマらない効率的なチーム制作の進行・技術の共有',
                     explanation: '希望進路・得意分野・将来の理想像などをもとに、ユーザーにさまざまなアドバイスを提供し、ポートフォリオ作成と、その過程の学習の手助けをする。<br>全体的なデザインは、「海外発のツール」をコンセプトに。<br>チームの目的を「共同制作で良いものを作る」ではなく(当然の為)、「チーム制作を通じて得るものを最大化させる」とし、後輩の意見を最大限尊重しながら制作。',
+                    tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS'],
+                    app: ['Visual Studio Code', 'PgAdmin']
+                }, {
+                    link: '',
+                    year: '2023後期',
+                    genre: 'code',
+                    recommend: true,
+                    productionPeriod: '2023.09(2週間)',
+                    fieldOfCharge: 'チームで制作 / リーダー / デザイン・コード担当',
+                    image: '/images/portfolio/.png',
+                    title: 'UniRide(ユニライド)',
+                    summary: '大学生向けのタクシー乗車×マッチングアプリ',
+                    purpose: 'チームで',
+                    explanation: 'インターンシップ終了後初めての学校授業参加。初めてチームリーダーとして制作を主導する役割をいただいた。その中で「いい作品を作る」は当たり前として、「チーム制作を通じて得るものを最大化する」を目標に。',
                     tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS'],
                     app: ['Visual Studio Code', 'PgAdmin']
                 }, {
@@ -143,6 +157,62 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     ideaNote: 'TODO',
                     video: 'TODO'
                 }, {
+                    link: '',
+                    year: '2022前期',
+                    genre: 'design',
+                    recommend: true,
+                    productionPeriod: '2023.09(1日)',
+                    fieldOfCharge: '1人で制作',
+                    image: '/images/portfolio/gorbachev.png',
+                    title: '初めてのDTP作成 - ゴルバチョフとは',
+                    summary: 'DTPについて学ぶ授業の課題',
+                    purpose: '紙媒体のデザインに挑戦し、デザインの基本を学ぶ',
+                    explanation: '実際にあるデザインを模倣したりするのが得意なので、紙媒体の見開き1ページで「ゴルバチョフ」について紹介。<br>細かい内容・テキストはwikipediaのコピーだが、見出しなどのテキストは内容と配置を観察しながら試行錯誤。',
+                    tech: [],
+                    app: ['inDesign']
+                }, {
+                    link: '',
+                    year: '2022前期',
+                    genre: 'design',
+                    recommend: true,
+                    productionPeriod: '2023.05(1日)',
+                    fieldOfCharge: '1人で制作',
+                    image: '/images/portfolio/.png',
+                    title: '自己紹介シート作成',
+                    summary: 'DTPについて学ぶ授業の課題',
+                    purpose: 'Illustratorの基本的な使用方法を学ぶ',
+                    explanation: 'みんながまだ初めましての時期。自分を知ってもらうための要素と、自分の写真を入れた1枚のシートを作成。高校生時代の文化祭の写真Ver.とモルカーコンセプトVer.の2つを作成。',
+                    tech: [],
+                    app: ['inDesign']
+                }, {
+                    link: '',
+                    year: '2022前期',
+                    genre: 'design',
+                    recommend: true,
+                    productionPeriod: '2023.07(1日)',
+                    fieldOfCharge: '1人で制作',
+                    image: '/images/portfolio/.png',
+                    title: '雑誌表紙 - 月刊プラウダ',
+                    summary: 'デザイン授業の課題',
+                    purpose: 'デザインの基本を学ぶ',
+                    explanation: '世にある雑誌の表紙を、各々好きなコンセプトで作成する授業課題。ロシア語Ver.と日本語Ver.がある。作った当時は「なかなかいけてるなこのデザイン」と強く思っていたのを覚えているが、今見てみると全くそう思わない。私のどの作品にも共通して出てくる問題点、"デザインの肝が使用する写真による"が如実に現れていると思う。',
+                    tech: [],
+                    app: ['inDesign']
+                }, {
+                    link: '',
+                    year: '2022後期',
+                    genre: 'code',
+                    recommend: false,
+                    productionPeriod: '2023.09(2週間)',
+                    fieldOfCharge: 'チームで制作 / コード実装担当',
+                    image: '/images/portfolio/.png',
+                    title: 'ほびっと！',
+                    summary: '新たな趣味を見つけるアプリ',
+                    purpose: 'テーマに沿ったコンテンツを考える',
+                    explanation: '初めてのチーム制作課題。優秀なデザイナーと組めたおかげで、実装に集中できたほかデザインの基礎、プレゼン資料の基礎など今も活きる技術を学ぶ。このときはまだHTML/CSS/Jsしか扱えず、静的ページをつなぎ合わせて動いているように見せかけている。',
+                    tech: ['HTML', 'CSS', 'JavaScript'],
+                    app: ['Visual Studio Code']
+                }, {
                     link: 'https://ryotaoku.github.io/Sluchay/',
                     year: '2022後期',
                     genre: 'code',
@@ -173,20 +243,6 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     designComp: 'TODO'
                 }, {
                     link: '',
-                    year: '2022前期',
-                    genre: 'design',
-                    recommend: true,
-                    productionPeriod: '2023.09(1日)',
-                    fieldOfCharge: '1人で制作',
-                    image: '/images/portfolio/gorbachev.png',
-                    title: '初めてのDTP作成 - ゴルバチョフとは',
-                    summary: 'DTPについて学ぶ授業の課題',
-                    purpose: '紙媒体のデザインに挑戦し、デザインの基本を学ぶ',
-                    explanation: '実際にあるデザインを模倣したりするのが得意なので、紙媒体の見開き1ページで「ゴルバチョフ」について紹介。<br>細かい内容・テキストはwikipediaのコピーだが、見出しなどのテキストは内容と配置を観察しながら試行錯誤。',
-                    tech: [],
-                    app: ['inDesign']
-                }, {
-                    link: '',
                     year: '2022後期',
                     genre: 'design',
                     recommend: true,
@@ -210,11 +266,24 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     title: '中崎町キャンドルナイト ポスター',
                     summary: '指定条件に沿ってポスターを制作',
                     purpose: 'デザインの基本を学ぶ',
-                    explanation: '大阪市北区の中崎町で実際に開かれる「中崎町キャンドルナイト」のポスターデザイン。<br>ありがたいことに毎年ECCのWebデザインコース生徒の作品から実際に使用されるらしく、私のデザインはしおりの表紙になった。今見てみると、メインの画像ありきのデザインになってしまっている。',
+                    explanation: '大阪市北区の中崎町で実際に開かれる「中崎町キャンドルナイト」のポスターデザイン。<br>毎年ECCのWebデザインコース生徒の作品から実際に使用されるらしく、私のデザインはしおりの表紙になった(1枚目)。今見てみると、メインの画像ありきのデザインになってしまっている。2枚目は完全に身内ネタ。',
                     tech: [],
                     app: ['Illustrator']
-                },
-                {
+                }, {
+                    link: '',
+                    year: '2022後期',
+                    genre: 'design',
+                    recommend: true,
+                    productionPeriod: '2023.01(1日)',
+                    fieldOfCharge: '1人で制作',
+                    image: '/images/portfolio/candle.png',
+                    title: '安倍晋三暗殺事件の真実',
+                    summary: '中身の世界観を体現した表紙作成',
+                    purpose: 'デザインの基本を学ぶ',
+                    explanation: 'ネタはなんでも良いので、本の表紙を作る授業課題。その当時、安倍晋三暗殺から半年も経っていない時期で、私自身まだ驚いていたのでそれを本にするならどうなるだろう、と制作。今となっては同様の内容の本が世の中にありふれている。真実は誰も知り得ない。',
+                    tech: [],
+                    app: ['Illustrator']
+                }, {
                     link: '',
                     year: 'past',
                     genre: 'presentation',
@@ -279,18 +348,17 @@ export async function getAllArchives(dispatch: React.Dispatch<Actions>) {
                     year: 'past',
                     genre: 'presentation',
                     recommend: false,
-                    productionPeriod: '',
-                    fieldOfCharge: '',
+                    productionPeriod: '2021.12(半月)',
+                    fieldOfCharge: '1人で制作',
                     image: '/images/portfolio/100.png',
                     title: 'おすすめの100均アイテムの紹介',
                     summary: '高校授業の一環。',
                     purpose: 'プレゼンの基本を学ぶ',
-                    explanation: '',
+                    explanation: 'プレゼンの基本を学ぶための課題。おすすめの100均アイテムを紹介するプレゼンを作成。<br>白背景・黒文字のよくあるプレゼン資料から少し手を加えてデザインを考慮。',
                     tech: [''],
                     app: ['MS Power Point']
                 }
                 ]
-
         });
 
     } catch (error) {

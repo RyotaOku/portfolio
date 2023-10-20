@@ -52,7 +52,7 @@
 }
 
 .contentsWrap .carousel .carouselWrap .archiveContent {
-    /* border: 1px solid #bebebe; */
+    border: 1px solid #bebebe;
     height: 20vh;
     min-height: 161px;
     aspect-ratio: 16/9;

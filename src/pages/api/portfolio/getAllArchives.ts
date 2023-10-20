@@ -72,6 +72,20 @@ async function getAllArchives(client: any) {
         genre: 'code',
         recommend: false,
         productionPeriod: '2023.09~2022.12(3ヶ月)',
+        fieldOfCharge: '1人で制作',
+        image: '/images/portfolio/.png',
+        title: '甘さの起源 - 人々の日常を追って',
+        summary: 'はちみつを売りたいんだ その1',
+        purpose: '商品の魅力を本質から離れた視点で伝える',
+        explanation: '「⚪︎⚪︎だからおすすめ！」「⚪︎⚪︎に大人気！」などの、商品の魅力をそのまま述べるのではなく、別の視点から遠回しに魅力を伝える力をつけるための課題。<br>ショートドラマ形式で「はちみつの甘さ」の魅力を知ってもらう。<br><i>"日常生活の中で「甘い」という言葉や感覚に触れることは多い。しかし、その原点や本質的な甘さについて、私たちはどれだけ知っているのだろうか？"</i>',
+        tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS'],
+        app: ['Visual Studio Code', 'PgAdmin']
+    }, {
+        link: '',
+        year: '2023後期',
+        genre: 'code',
+        recommend: false,
+        productionPeriod: '2023.09~2022.12(3ヶ月)',
         fieldOfCharge: 'チームで制作 / リーダー / デザイン・コード担当',
         image: '/images/portfolio/.png',
         title: '(ここに作品名)',
@@ -91,7 +105,7 @@ async function getAllArchives(client: any) {
         title: '甘さの起源 - 人々の日常を追って',
         summary: 'はちみつを売りたいんだ その1',
         purpose: '商品の魅力を本質から離れた視点で伝える',
-        explanation: '「⚪︎⚪︎だからおすすめ！」「⚪︎⚪︎に大人気！」などの、商品の魅力をそのまま述べるのではなく、別の視点から遠回しに魅力を伝える力をつけるための課題。<br>というショートドラマ形式で「はちみつの甘さ」の魅力を知ってもらう。<br><i>"日常生活の中で「甘い」という言葉や感覚に触れることは多い。しかし、その原点や本質的な甘さについて、私たちはどれだけ知っているのだろうか？"</i>',
+        explanation: '「⚪︎⚪︎だからおすすめ！」「⚪︎⚪︎に大人気！」などの、商品の魅力をそのまま述べるのではなく、別の視点から遠回しに魅力を伝える力をつけるための課題。<br>ショートドラマ形式で「はちみつの甘さ」の魅力を知ってもらう。<br><i>"日常生活の中で「甘い」という言葉や感覚に触れることは多い。しかし、その原点や本質的な甘さについて、私たちはどれだけ知っているのだろうか？"</i>',
         tech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS'],
         app: ['Visual Studio Code', 'PgAdmin']
     }, {
