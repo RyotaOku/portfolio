@@ -18,7 +18,8 @@ export function Profile({ sideProfile, setSideProfile }: props) {
                     <h2 className={style.profile}>
                         ECCコンピュータ専門学校<br />
                         マルチメディア研究学科<br />
-                        Webデザインコース (2025年卒)
+                        Webデザインコース (2025年卒) <br />
+
                     </h2>
                 </section>
                 <section className={style.profileWrap}>

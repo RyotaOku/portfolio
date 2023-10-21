@@ -34,16 +34,15 @@ export default function Portfolio() {
 
     const [globalState, portfolioDispatch] = useReducer(portfolioReducer, initialState);
 
-    useEffect(() => {
-        getAllArchives(portfolioDispatch);
-    }, []);
-
     const [filter, setFilter] = useState<Filter>({
         archive: 'all',
         condition: 'all'
     })
 
     const [isModalVisible, setModalVisible] = useState(false);
+
+    const [sideProfile, setSideProfile] = useState(true)
+
     const [selectedArchive, setSelectedArchive] = useState<ArchiveItem>({
         link: '',
         year: 'past',
@@ -60,6 +59,10 @@ export default function Portfolio() {
         app: []
     });
 
+    useEffect(() => {
+        getAllArchives(portfolioDispatch);
+    }, []);
+
     function handleArchiveClick(archive: any) {
         setSelectedArchive(archive);
         setModalVisible(true);
@@ -68,8 +71,6 @@ export default function Portfolio() {
     function closeModal() {
         setModalVisible(false);
     }
-
-    const [sideProfile, setSideProfile] = useState(true)
 
     function updateCondition(condition: 'all' | 'code' | 'design' | 'presentation' | 'document') {
         console.log(condition);

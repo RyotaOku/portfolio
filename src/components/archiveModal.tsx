@@ -70,7 +70,7 @@ export function ArchiveModal({ archive, onClose, visible }: props) {
                 elements.push(currentText);
                 elements.push(<br key={i} />);
                 currentText = "";
-                i += 3; // skip next 3 characters
+                i += 3;
             } else if (explanation.substr(i, 3) === "<i>") {
                 let end = explanation.indexOf("</i>", i);
                 if (end !== -1) {
