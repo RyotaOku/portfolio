@@ -2,6 +2,7 @@
 import styles from '@/styles/components/modal.module.css'
 import { ArchiveItem } from '../types/portfolioTypes';
 import { Dialog } from 'primereact/dialog';
+import { Button } from '@/components/button'
 
 type props = {
     archive: ArchiveItem,
@@ -136,6 +137,7 @@ export function ArchiveModal({ archive, onClose, visible }: props) {
                             {archive.genre === 'code' && (
                                 <>
                                     <button disabled={!archive.link} className={styles.button} onClick={() => { handleClick('link') }}>サイト</button>
+                                    <Button text='サイト' disabled={!archive.link} />
                                     {archive.beta && <button className={styles.button} onClick={() => { handleClick('beta') }}>ベータ版</button>}
                                 </>
                             )}

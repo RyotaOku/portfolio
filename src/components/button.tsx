@@ -1,9 +1,9 @@
 import style from '@/styles/components/button.module.css';
 
 type props = {
-    text: string,
+    text?: string,
     className?: string,
-    disabled: boolean,
+    disabled?: boolean,
     onClick?: () => void
 }
 
