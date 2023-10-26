@@ -138,13 +138,13 @@ export function ArchiveModal({ archive, onClose, visible }: props) {
                                 <>
                                     {/* <button disabled={!archive.link} className={styles.button} onClick={() => { handleClick('link') }}>サイト</button> */}
                                     <Button text='サイト' disabled={!archive.link} onClick={() => { handleClick('link') }} />
-                                    {archive.beta && <button className={styles.button} onClick={() => { handleClick('beta') }}>ベータ版</button>}
+                                    {archive.beta && <Button text='ベータ版' className={styles.button} onClick={() => { handleClick('beta') }} />}
                                 </>
                             )}
-                            {archive.genre === 'design' && <button className={styles.button} onClick={() => { handleClick('image') }}>拡大表示</button>}
-                            {archive.genre === 'presentation' && <button className={styles.button} onClick={() => { handleClick('presen') }}>プレゼン動画</button>}
-                            {archive.ideaNote && <button className={styles.button} onClick={() => { handleClick('idea') }}>アイデアノート</button>}
-                            {archive.otherDesign && <button className={styles.button} onClick={() => { handleClick('otherDesign') }}>その他デザイン</button>}
+                            {archive.genre === 'design' && <Button className={styles.button} text={'拡大表示'} onClick={() => { handleClick('image') }} />}
+                            {archive.genre === 'presentation' && <Button text='プレゼン動画' className={styles.button} onClick={() => { handleClick('presen') }} />}
+                            {archive.ideaNote && <Button text='アイデアノート' className={styles.button} onClick={() => { handleClick('idea') }} />}
+                            {archive.otherDesign && <Button text='その他デザイン' className={styles.button} onClick={() => { handleClick('otherDesign') }} />}
                         </div>
                     </div>
                 </div>
