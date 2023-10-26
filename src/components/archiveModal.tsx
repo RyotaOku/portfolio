@@ -136,8 +136,8 @@ export function ArchiveModal({ archive, onClose, visible }: props) {
                         <div className={styles.productOperate}>
                             {archive.genre === 'code' && (
                                 <>
-                                    <button disabled={!archive.link} className={styles.button} onClick={() => { handleClick('link') }}>サイト</button>
-                                    <Button text='サイト' disabled={!archive.link} />
+                                    {/* <button disabled={!archive.link} className={styles.button} onClick={() => { handleClick('link') }}>サイト</button> */}
+                                    <Button text='サイト' disabled={!archive.link} onClick={() => { handleClick('link') }} />
                                     {archive.beta && <button className={styles.button} onClick={() => { handleClick('beta') }}>ベータ版</button>}
                                 </>
                             )}
