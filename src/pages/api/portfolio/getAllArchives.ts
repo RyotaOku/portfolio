@@ -73,7 +73,7 @@ async function getAllArchives(client: any) {
         recommend: false,
         productionPeriod: '2023.09~2022.12(3ヶ月)',
         fieldOfCharge: 'チームで制作 / リーダー / デザイン・コード担当',
-        image: '/images/portfolio/.png',
+        image: '/images/portfolio/aeDesign.png',
         title: 'aeDesignsQuest',
         summary: 'Webデザイナー向けの自己診断ツール',
         purpose: '型にハマらない効率的なチーム制作の進行・技術の共有',

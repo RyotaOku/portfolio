@@ -1,12 +1,25 @@
 import style from '@/styles/components/profile.module.css'
 import Link from 'next/link'
+import { useState } from 'react'
+import { Dialog } from 'primereact/dialog';
 
 type props = {
     sideProfile: boolean,
     setSideProfile: React.Dispatch<React.SetStateAction<boolean>>
 }
 
+type dialogProps = {
+    onClose: () => void,
+    visible: boolean
+}
+
 export function Profile({ sideProfile, setSideProfile }: props) {
+    const [moreProfile, setMoreProfile] = useState(false)
+
+    function closeModal() {
+        setMoreProfile(false);
+    }
+
     return (
         <>
             <div className={style.aboutMe}
@@ -19,7 +32,7 @@ export function Profile({ sideProfile, setSideProfile }: props) {
                         ECCコンピュータ専門学校<br />
                         マルチメディア研究学科<br />
                         Webデザインコース (2025年卒) <br />
-
+                        <button className={style.more + ' ' + 'pi pi-external-link'} onClick={() => { setMoreProfile(true) }}>奥綾太をもっと知る</button>
                     </h2>
                 </section>
                 <section className={style.profileWrap}>
@@ -40,6 +53,35 @@ export function Profile({ sideProfile, setSideProfile }: props) {
                     sideProfile ? setSideProfile(false) : setSideProfile(true)
                 }}></div>
             </div>
+            <MoreProfile visible={moreProfile} onClose={closeModal} />
         </>
+    )
+}
+
+function MoreProfile({ visible, onClose }: dialogProps) {
+    return (
+        <Dialog
+            header={'奥綾太のメモ'}
+            visible={visible}
+            headerClassName={style.modalHeader}
+            className={style.modal + ' ' + 'archiveModal'}
+            onHide={onClose}
+        >
+            <p>奥綾太がNotionに書き記してきた、チーム制作の心得や勉強のノート。外部リンクです。</p>
+            <div className={style.wrap}>
+                <a href="https://www.notion.so/React-TypeScript-0e33cf99c5a541598cba7a5b17eaf2e4" target='_blank' rel='noreferrer'>
+                    <picture><img src="/images/portfolio/icon3.png" alt="" /></picture>
+                    React TypeScriptを理解する
+                </a>
+                <a href="https://www.notion.so/1bfd323b3ce94af3985300f9884419cb" target='_blank' rel='noreferrer'>
+                    <picture><img src="/images/portfolio/icon.png" alt="" /></picture>
+                    制作メモ
+                </a>
+                <a href="https://www.notion.so/f85e45ade31145e992b4e9da4342cb88" target='_blank' rel='noreferrer'>
+                    <picture><img src="/images/portfolio/icon2.png" alt="" /></picture>
+                    チーム制作の手引き
+                </a>
+            </div>
+        </Dialog>
     )
 }
